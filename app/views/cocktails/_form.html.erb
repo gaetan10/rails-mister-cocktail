@@ -1,5 +1,11 @@
+<div class="row">
 
-<%= simple_form_for @cocktail do |f| %>
-<%= f.input :name, label: "Cocktail name", placeholder: "Mojito"  %>
-<%= f.submit "submit", class: "btn btn-primary"  %>
-<% end %>
+    <div class="col-md-offset-4 col-md-4">
+      <%= simple_form_for @cocktail do |f| %>
+      <%= f.input :name, label: "Cocktail name", placeholder: "Mojito"  %>
+      <%= f.input :photo %>
+      <%= f.input :photo_cache, as: :hidden %>
+      <%= f.submit "submit", class: "btn btn-primary"  %>
+    </div>
+  <% end %>
+</div>

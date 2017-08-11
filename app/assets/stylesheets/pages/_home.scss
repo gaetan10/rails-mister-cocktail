@@ -1,1 +1,38 @@
 // Specific CSS for your home-page
+.container {
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.container h2 {
+  margin-bottom: 40px;
+}
+
+
+.banner {
+  background-image:linear-gradient( rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url("http://duckduckbar.com/Archive/index.jpg");
+  height: 80vh;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 50px;
+
+
+}
+
+.banner h1 {
+    position: absolute;
+    top: 121px;
+    left: 226px;
+    color: white;
+    font-size: 71px;
+}
+
+.banner h3 {
+     position: absolute;
+    top: 220px;
+    left: 230px;
+    color: white;
+    font-size: 39px;
+    opacity: 60%;
+}

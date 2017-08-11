@@ -1,0 +1,28 @@
+.card {
+
+  background-size: cover;
+  height: 200px;
+  margin: 5px 0 5px 0;
+  padding: 0 4px 0 4px;
+
+  position: relative;
+  border-radius: 4px;
+  box-shadow: 3px 3px 2px #888888;
+}
+
+.card #name {
+  position: absolute;
+  top: 54px;
+  left: 66px;
+  color: white;
+  font-size: 40px;
+}
+
+.card #no-picture {
+  position: absolute;
+  top: 110px;
+  left: 66px;
+  color: black;
+  font-size: 20px;
+}
+
