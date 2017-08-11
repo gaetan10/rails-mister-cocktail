@@ -1,7 +1,0 @@
-<%= simple_form_for [@cocktail, @dose] do |f| %>
-<%= f.input :ingredient_id, :collection => Ingredient.all, label: "Ingredient", placeholder: "rhum, lime.."  %>
-<%= f.input :description, label: "Quantity", placeholder: "10cl, 2 units.."  %>
-<%= f.submit "submit", class: "btn btn-primary"  %>
-<% end %>
-
-<%= link_to "return", cocktail_path(@cocktail), {class: "btn btn-primary"} %>

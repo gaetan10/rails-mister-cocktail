@@ -1,11 +1,23 @@
 <h2> <%= @cocktail.name %> </h2>
 
 
-<% @cocktail.doses.each do |dose| %>
-<p> <%=  dose.ingredient.name %> : <%= dose.description %></p>
-<hr />
+<%= simple_form_for [@cocktail, @dose] do |f| %>
+<%= f.input :ingredient_id, :collection => Ingredient.all, label: "Ingredient", placeholder: "rhum, lime.."  %>
+<%= f.input :description, label: "Quantity", placeholder: "10cl, 2 units.."  %>
+<%= f.submit "submit", class: "btn btn-primary"  %>
 <% end %>
 
+<br />
+<br />
 
 
 <%= link_to "add ingredient", new_cocktail_dose_path(@cocktail), {class: "btn btn-primary"} %>
+
+<h4>Doses:</h4>
+<ul>
+<% @cocktail.doses.each do |dose| %>
+<li> <%=  dose.ingredient.name %> : <%= dose.description %></li>
+<% end %>
+</ul>
+
+
