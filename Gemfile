@@ -46,6 +46,7 @@ gem 'autoprefixer-rails'
 gem 'figaro'
 gem 'cloudinary'
 gem 'carrierwave', '~> 0.11.2'
+gem 'seed_dump'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
